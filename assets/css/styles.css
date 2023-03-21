@@ -1,0 +1,126 @@
+body, html {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 99%;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Styles of summary */
+}
+.container main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 645px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 31px 7px 35px 10px #f4f7fe;
+  /* Styles of result */
+}
+.container main #result {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 30px;
+}
+.container main #result .circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  border-radius: 50%;
+  width: 60%;
+  height: 172px;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+}
+.container main #result .circle h1 {
+  font-size: 65px;
+  margin: 0;
+}
+.container main #result .circle .continue {
+  color: hsl(241, 100%, 89%);
+}
+.container main #result .content-resume {
+  margin: 0px auto;
+  width: 85%;
+}
+.container main #result .content-resume .resume {
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  font-size: 20px;
+}
+.container main #result h2 {
+  font-size: 30px;
+}
+.container main #result h3 {
+  color: hsl(241, 100%, 89%);
+  margin-top: 30px;
+}
+.container #summary ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-right: 37px;
+}
+.container #summary ul li {
+  display: flex;
+  margin: 10px;
+  height: 50px;
+  align-items: center;
+  border-radius: 10px;
+}
+.container #summary ul li small {
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.container #summary ul li svg {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.container #summary h3 {
+  margin-top: 30px;
+  padding-left: 37px;
+}
+.container .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 99%;
+  height: 50px;
+}
+.container .btn-container button {
+  height: 50px;
+  width: 250px;
+  border-radius: 30px;
+  border: none;
+  background: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-weight: bold;
+  transition: background 500ms;
+  cursor: pointer;
+}
+.container .btn-container button:active {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+}
+.container .red {
+  background: #fff6f5;
+  color: hsl(0, 100%, 67%);
+}
+.container .oy {
+  background: #fffbf2;
+  color: hsl(39, 100%, 56%);
+}
+.container .gt {
+  background: #f2fafa;
+  color: hsl(166, 100%, 37%);
+}
+.container .cb {
+  background: #f3f3fd;
+  color: hsl(234, 85%, 45%);
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,176 @@
+$global-font: 'Hanken Grotesk', sans-serif;
+$bg-body: hsl(0, 0%, 100%);
+$gradient-result: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
+$white: hsl(0, 0%, 100%);
+$light-lavender: hsl(241, 100%, 89%);
+
+$light-red:hsl(0, 100%, 67%);
+$orangey-yellow: hsl(39, 100%, 56%);
+$green-teal: hsl(166, 100%, 37%);
+$cobalt-blue: hsl(234, 85%, 45%);
+
+$dark-gray-blue: hsl(224, 30%, 27%);
+
+
+body, html{
+    font-family: $global-font;
+    background-color: $bg-body;
+}
+
+.container{
+    width: 99%;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        main{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            // border: 2px solid red;
+            width: 645px;
+            height: 450px;
+            border-radius: 15px;
+            box-shadow: 31px 7px 35px 10px #f4f7fe;
+            
+
+                /* Styles of result */
+
+                #result{
+                   background: $gradient-result;
+                   color: $white;
+                   text-align: center;
+                   border-radius: 30px;
+
+                    .circle{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0px auto;
+                        border-radius: 50%;
+                        width: 60%;
+                        height: 172px;
+                        background: $gradient-result;
+
+                            h1{
+                                font-size: 65px;
+                                margin: 0;
+                            }
+                            .continue{
+                                color: $light-lavender;
+                            }
+                        
+                    }
+
+                    .content-resume{
+                        margin: 0px auto;
+                        width: 85%;
+                        
+
+                        .resume{
+                            text-align: center;
+                            color: $light-lavender;
+                            font-size: 20px;
+                        }
+                    }
+                    
+                    h2{
+                        font-size: 30px;
+                    }
+                    
+                   h3{
+                    color: $light-lavender;
+                    margin-top: 30px;
+                   }
+
+                   
+                }
+        }
+
+        /* Styles of summary */
+
+        #summary{
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                padding-right: 37px;
+                
+
+                li{
+                    display: flex;
+                    margin: 10px;
+                    height: 50px;
+                    align-items: center;
+                    border-radius: 10px;
+                    
+                    small{
+                        font-size: 18px;
+                        margin-left: auto;
+                        margin-right: 10px;
+                    }
+
+                    svg{
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+
+                }
+            }
+            
+            h3{
+                margin-top: 30px;
+                padding-left: 37px;
+            }
+        }
+
+        .btn-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 99%;
+            height: 50px;
+
+                button{
+                    height: 50px;
+                    width: 250px;
+                    border-radius: 30px;
+                    border: none;
+                    background: $dark-gray-blue;
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: bold;
+                    transition: background 500ms;
+                    cursor: pointer;
+                }
+
+                
+                button:active{
+                    background: $gradient-result;
+                }
+
+            }
+            
+        .red{
+            background: #fff6f5;
+            color: $light-red
+        }
+        .oy{
+            background: #fffbf2;
+            color: $orangey-yellow;
+        }
+        .gt{
+            background: #f2fafa;
+            color: $green-teal;
+        }
+        .cb{
+            background: #f3f3fd;
+            color: $cobalt-blue;
+        }
+
+        
+
+
+}
