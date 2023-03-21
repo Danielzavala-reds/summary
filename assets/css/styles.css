@@ -1,12 +1,25 @@
+@media (max-width: 565px) {
+  .container {
+    min-height: auto;
+    margin: 0px auto;
+    margin-top: -20px;
+    align-items: flex-start !important;
+  }
+  .container main {
+    grid-template-columns: 1fr !important;
+  }
+}
 body, html {
   font-family: "Hanken Grotesk", sans-serif;
   background-color: hsl(0, 0%, 100%);
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  width: 99%;
-  height: 98vh;
   display: flex;
+  width: 99%;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   /* Styles of summary */

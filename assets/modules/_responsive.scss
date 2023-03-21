@@ -1,0 +1,14 @@
+@media (max-width: 565px) {
+    .container{
+        
+        min-height: auto;
+        margin: 0px auto;
+        margin-top: -20px;
+        align-items: flex-start !important;
+        
+        main{
+            grid-template-columns: 1fr !important;
+        }
+    }   
+    
+}

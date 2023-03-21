@@ -1,3 +1,5 @@
+@use '../modules/responsive';
+
 $global-font: 'Hanken Grotesk', sans-serif;
 $bg-body: hsl(0, 0%, 100%);
 $gradient-result: linear-gradient(to bottom, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%) 100%);
@@ -15,12 +17,14 @@ $dark-gray-blue: hsl(224, 30%, 27%);
 body, html{
     font-family: $global-font;
     background-color: $bg-body;
+    margin: 0;
+    padding: 0;
 }
 
 .container{
-    width: 99%;
-    height: 98vh;
     display: flex;
+    width: 99%;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
 
