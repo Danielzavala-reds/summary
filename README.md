@@ -1,4 +1,3 @@
 ##Preview 
-![Desktop preview](/results-summary/assets/img/desktop-preview.jpg)
-
-![Mobile preview](/results-summary/assets/img/mobile-design.jpg)
+![Desktop preview](./assets/img/desktop-preview.jpg)
+![Mobile preview](./assets/img/mobile-design.jpg)
